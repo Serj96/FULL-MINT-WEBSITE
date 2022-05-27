@@ -1,4 +1,9 @@
 require("@nomiclabs/hardhat-waffle");
+require("@nomiclabs/hardhat-etherscan");
+const dotenv = require ("dotenv");
+
+dotenv.config();
+
 
 // This is a sample Hardhat task. To learn how to create your own go to
 // https://hardhat.org/guides/create-task.html
@@ -18,4 +23,15 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
  */
 module.exports = {
   solidity: "0.8.4",
+  networks: {
+    rinkeby: {
+      url: process.env.REACT_APP_RINKEBY_RPC_URL,
+      accounts: [process.env.REACT_APP_PRIVATE_KEY],
+    },
+  },
+  etherscan: {
+    apiKey: process.env.REACT_APP_ETHERSCAN_KEY,
+  },
 };
+
+// RoboPunksNFT deployed to: 0x85f6957547f3e52841A816802c01251d833C51b3;
