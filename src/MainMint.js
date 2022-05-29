@@ -47,7 +47,7 @@ const MainMint = ({ accounts, setAccounts}) => {
                         <input type="number" value={mintAmount} />
                         <button onClick={handleIncrement}>+</button>
                     </div>
-                    <button onClick={handleMint}> Mint Now</button>
+                    <button onClick={handleMint}>Mint Now</button>
                 </div>
             ) : (
                 <p>You must be connected to Mint.</p>
