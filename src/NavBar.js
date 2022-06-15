@@ -19,15 +19,16 @@ const NavBar = ({ accounts, setAccounts }) => {
     return(
         <Flex justify="space-between" aling="center" padding="30px">
             {/* Left Side - Social Media Icons */}
-            <Flex justify="space-between" width="40%" padding="0 75">
+            
+            <Flex justify="space-between" width="50%" padding="0 75">
             <Link href="https://www.facebook.com/">
-                <Image scr={Facebook} boxSize="42px" margin="0 15px" /> 
+            <Image src={Facebook} boxSize="42px" margin="0 15px" />
                 </Link>
             <Link href="https://www.twitter.com/">
-                <Image scr={Twitter} boxSize="42px" margin="0 15px" /> 
+                <Image src={Twitter} boxSize="42px" margin="0 15px" /> 
                 </Link>
             <Link href="https://www.gmail.com/">
-                <Image scr={Email} boxSize="42px" margin="0 15px" /> 
+                <Image src={Email} boxSize="42px" margin="0 15px" /> 
                 </Link> 
                 </Flex>   
 
@@ -38,11 +39,11 @@ const NavBar = ({ accounts, setAccounts }) => {
                 width="40%"
                 padding="30px"
                >
-                <Box margin="0 15">About</Box>
+                <Box margin="0 20">About</Box>
                 <Spacer /> 
-                <Box margin="0 15">Mint</Box>
+                <Box margin="0 20">Mint</Box>
                 <Spacer /> 
-                <Box margin="0 15">Team</Box>
+                <Box margin="0 20">Team</Box>
                 <Spacer /> 
             
             {/* Connect */}
