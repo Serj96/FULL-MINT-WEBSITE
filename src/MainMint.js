@@ -1,7 +1,7 @@
-import { useState } from 'react';
-import { ethers, BigNumber} from 'ethers';
-import { Box, Button, Flex, Input, Text } from '@chakra-ui/react';
-import roboPunksNFT from './RoboPunksNFT.json';
+import { useState } from "react";
+import { ethers, BigNumber} from "ethers";
+import { Box, Button, Flex, Input, Text } from "@chakra-ui/react";
+import roboPunksNFT from "./RoboPunksNFT.json";
 
 const roboPunksNFTAddress = "0x85f6957547f3e52841A816802c01251d833C51b3";
 
@@ -40,10 +40,10 @@ const MainMint = ({ accounts, setAccounts}) => {
     };
 
     return (
-        <Flex justify="center" align="center" height="100vh" paddingBottom="150px">
+        <Flex justify="center" align="center" height="70vh" paddingBottom="150px">
             <Box width="520px">
                 <div>
-                <Text fontSize="48px" textShadow="0 5px #000000">
+                <Text fontSize="80px" textShadow="0 5px #000000">
                     RoboPunks
                     </Text>
                 <Text
