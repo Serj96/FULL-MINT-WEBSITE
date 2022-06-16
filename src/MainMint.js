@@ -19,9 +19,7 @@ const MainMint = ({ accounts, setAccounts}) => {
                 signer
             );
             try{
-                const response = await contract.mint(BigNumber.from(mintAmount), {
-                    value: ethers.utils.parseEther((0.02 * mintAmount).toString()), 
-                });
+                const response = await contract.mint(BigNumber.from(mintAmount));
                 console.log('response: ', response);
             } catch (err) {
                 console.log("error: ", err)
